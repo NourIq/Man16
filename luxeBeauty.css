@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+.top-banner {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: relative;
+  background-color: #f0f0f0;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 0;
+}
+
+.logo {
+  width: 180px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: black;
+  padding: 10px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.icon-section {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+
+.icon-section i {
+  margin-right: 15px;
+  cursor: pointer;
+  color: black;
+  font-size: 20px;
+}
+
+.dropdown {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 200px;
+  z-index: 10;
+}
+
+.dropdown.show {
+  display: flex;
+}
+
+.dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.mainPhoto {
+  text-align: center;
+  margin-top: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.mainPhoto img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+
+.buy-now {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+}
+
+.products {
+  display: flex;
+  overflow-x: auto;
+  gap: 1px;
+  padding: 10px 5px;
+  background-color: white;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  position: relative;
+  margin-top: -40px;
+  z-index: 3;
+}
+
+.products::-webkit-scrollbar {
+  display: none; /* För Chrome, Safari och Opera */
+}
+
+.product {
+  background-color: none;
+  padding: 4px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  margin: 0;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+}
+
+.product button {
+  margin-top: 5px;
+  padding: 8px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer .socials i {
+  margin: 0 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
